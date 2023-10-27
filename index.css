@@ -11,10 +11,6 @@
   padding: 0 50px;
 }
 
-::-webkit-scrollbar {
-  width: 0px;
-}
-
 nav {
   position: fixed;
   width: 100%;
@@ -408,11 +404,291 @@ nav .nav .other i:hover {
 .section-6 .box .card::after {
   content: "08:00 PM Tuesday - 21 November 2018";
   width: 100%;
+  padding: 5px;
   position: absolute;
   top: 50%;
-  right: 608px;
+  right: 590px;
   background-color: rgb(218, 20, 20);
   transform: rotate(-90deg) translateY(-50%);
   text-align: center;
   color: #fff;
+}
+
+.section-7 .box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 30px;
+}
+.section-7 .box .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-7 .box .left .text h1 {
+  color: rgb(218, 20, 20);
+  font-family: "Courgette", cursive;
+  text-align: center;
+}
+.section-7 .box .left .text span {
+  font-size: 70px;
+  font-weight: 600;
+}
+.section-7 .box .left .inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.section-7 .box .left .inputs .input-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-7 .box .left .inputs .input-box input {
+  width: 100%;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  outline: none;
+  background: #fff;
+  border: solid 2px gray;
+  transition: all 0.5s ease;
+}
+.section-7 .box .left .inputs .input-box input:focus {
+  border: solid 2px rgb(218, 20, 20);
+}
+.section-7 .box .left .inputs .input-box select {
+  width: 100%;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  outline: none;
+  background: #fff;
+  border: solid 2px gray;
+}
+.section-7 .box .left button {
+  background: #252525;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.section-7 .box .left button:hover {
+  background: rgb(218, 20, 20);
+}
+.section-7 .box .right {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-7 .box .right img {
+  width: 100%;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.section-7 .box .right img:hover {
+  transform: scale(1.1);
+}
+
+.section-8 {
+  padding: 20px 0;
+}
+.section-8 .box {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.section-8 .box .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-8 .box .top h1 {
+  color: rgb(218, 20, 20);
+  font-family: "Courgette", cursive;
+  text-align: center;
+}
+.section-8 .box .top span {
+  font-size: 70px;
+  font-weight: 600;
+}
+.section-8 .box .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-8 .box .bottom img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: solid 5px rgb(218, 20, 20);
+  border-radius: 999px;
+}
+.section-8 .box .bottom p {
+  color: gray;
+  width: 60%;
+  text-align: center;
+}
+.section-8 .box .stars {
+  color: yellow;
+}
+
+.section-9 {
+  width: 100%;
+  height: 500px;
+  background: url(./assets/bg-cover-video-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-9 .box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-9 .box h1 {
+  color: rgb(218, 20, 20);
+  font-family: "Courgette", cursive;
+  text-align: center;
+}
+.section-9 .box span {
+  font-size: 70px;
+  font-weight: 600;
+  color: #fff;
+}
+.section-9 .box i {
+  font-size: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 999px;
+}
+
+.section-10 {
+  background: #e3e3e3;
+}
+.section-10 .box {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.section-10 .box .input-box {
+  background: #fff;
+  border: 2px solid gray;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.section-10 .box .input-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.section-10 .box .input-box i {
+  font-size: 20px;
+  color: gray;
+}
+.section-10 .box button {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.section-10 .box button:hover {
+  background: rgb(218, 20, 20);
+}
+
+footer {
+  background: #252525;
+  padding: 20px 0;
+}
+footer .box .top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 50px;
+}
+footer .box .top h1 {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+footer .box .top span {
+  color: gray;
+}
+footer .box .top i {
+  color: gray;
+}
+footer .box .top .box-2 {
+  width: 30%;
+}
+footer .box .top .box-3 {
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-direction: column;
+}
+footer .box .top .box-3 .images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+footer .box .top .box-3 .images .img {
+  position: relative;
+  transition: all 0.5s ease;
+}
+footer .box .top .box-3 .images .img img {
+  width: 100%;
+}
+footer .box .top .box-3 .images .img::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 93%;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+footer .box .top .box-3 .images .img:hover::after {
+  opacity: 1;
+}
+footer .box .bottom {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: gray;
 }/*# sourceMappingURL=index.css.map */
